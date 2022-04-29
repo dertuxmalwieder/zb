@@ -26,18 +26,24 @@ Everything else in that Zip file can be any file of your choice. Relative refere
 ### First steps...
 
 * Fetch the latest code with Fossil ...
-  
-    fossil clone https://code.rosaelefanten.org/zb
-    cd zb
+
+```
+> fossil clone https://code.rosaelefanten.org/zb
+> cd zb
+```
 
 * ... or Git:
-  
-    fossil clone https://github.com/dertuxmalwieder/zb
-    cd zb
+
+```  
+> fossil clone https://github.com/dertuxmalwieder/zb
+> cd zb
+```
 
 * Install Rust, then build `zb` with `cargo`:
-  
-    cargo build --release
+
+```  
+> cargo build --release
+```
 
 ### On Unix and Unix-like systems
 
