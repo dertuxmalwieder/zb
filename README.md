@@ -27,17 +27,17 @@ Everything else in that Zip file can be any file of your choice. Relative refere
 
 * Fetch the latest code with Fossil ...
   
-      > fossil clone https://code.rosaelefanten.org/zb
-      > cd zb
-   
-  ... or Git:
+    fossil clone https://code.rosaelefanten.org/zb
+    cd zb
+
+* ... or Git:
   
-      > fossil clone https://github.com/dertuxmalwieder/zb
-      > cd zb
+    fossil clone https://github.com/dertuxmalwieder/zb
+    cd zb
 
 * Install Rust, then build `zb` with `cargo`:
   
-      > cargo build --release
+    cargo build --release
 
 ### On Unix and Unix-like systems
 
@@ -50,10 +50,10 @@ Now, concatenate your `zb` binary with your Zip file. Assuming your Zip file is 
 Now, concatenate your `zb.exe` with your Zip file. Assuming your Zip file is named `index.zip`:
 
     # PowerShell
-    > cmd /c copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
+    cmd /c copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
     
     # cmd
-    > copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
+    copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
 
 ### Once done ...
 
@@ -66,13 +66,9 @@ It is important to note that the file extensions for `.org`, `.md` and HTML file
 The search order for all files is:
 
 1. `/[path]`
-
 2. `/[path].md`
-
 3. `/[path].org`
-
 4. `/[path].htm`
-
 5. `/[path].html`
 
 ## How to contribute code
