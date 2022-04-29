@@ -1,0 +1,22 @@
+[package]
+name = "zb"
+description = "a zip blog"
+version = "0.1.0"
+authors = ["Cthulhux <git@tuxproject.de>"]
+edition = "2021"
+license = "CDDL-1.1"
+repository = "https://code.rosaelefanten.org/zb"
+categories = ["command-line-utilities"]
+keywords = ["blogging", "zip"]
+
+[dependencies]
+actix-web = "4"
+clap = { version = "3.1", features = ["derive"] }
+comrak = "0.10"
+mime = "0.3"
+mime_guess = "2.0"
+orgize = "0.9"
+zip = { version = "0.6", default-features = false, features = ["deflate", "zstd"] }
+
+[profile.release]
+lto = true
