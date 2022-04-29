@@ -29,7 +29,7 @@ Everything else in that Zip file can be any file of your choice. Relative refere
   
       > fossil clone https://code.rosaelefanten.org/zb
       > cd zb
-  
+   
   ... or Git:
   
       > fossil clone https://github.com/dertuxmalwieder/zb
