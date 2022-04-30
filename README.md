@@ -12,7 +12,7 @@ Quite surprisingly (for me), it wasn't really hard at all.
 
 ## How do I use this?
 
-You'll need a Zip file, containing (at least) one of the following files in the root path:
+You'll need a Zip file, containing your website. For the default start page, `zb` will search for one of the following files in the root path:
 
 * `index.htm`
 * `index.html`
@@ -55,11 +55,13 @@ Now, concatenate your `zb` binary with your Zip file. Assuming your Zip file is 
 
 Now, concatenate your `zb.exe` with your Zip file. Assuming your Zip file is named `index.zip`:
 
-    # PowerShell
-    cmd /c copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
-    
-    # cmd
-    copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
+```
+# PowerShell
+> cmd /c copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
+
+# cmd
+> copy /b .\target\release\zb.exe+.\index.zip .\zb.exe
+```
 
 ### Once done ...
 
@@ -79,7 +81,7 @@ The search order for all files is:
 
 ## How to contribute code
 
-1. Read and agree to the [Code of ~~Conduct~~ Merit](CODE_OF_CONDUCT.md).
+1. Read and agree to the [Code of Merit](CODE_OF_CONDUCT.md).
 2. Implicitly agree to the [LICENSE](LICENSE). Nobody reads those. I don't either.
 3. Find out if anyone has filed a GitHub Issue or even sent a Pull Request yet. Act accordingly.
 4. Send me a patch, either via e-mail (`git at tuxproject dot de`) or as a GitHub Pull Request. Note that GitHub only provides a mirror, so you'd double my work if you choose the latter. :-)
