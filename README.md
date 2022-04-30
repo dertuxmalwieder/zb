@@ -35,7 +35,7 @@ Everything else in that Zip file can be any file of your choice. Relative refere
 * ... or Git:
 
 ```  
-> fossil clone https://github.com/dertuxmalwieder/zb
+> git clone https://github.com/dertuxmalwieder/zb
 > cd zb
 ```
 
@@ -82,7 +82,7 @@ The search order for all files is:
 ## How to contribute code
 
 1. Read and agree to the [Code of Merit](CODE_OF_CONDUCT.md).
-2. Implicitly agree to the [LICENSE](LICENSE). Nobody reads those. I don't either.
+2. Implicitly agree to the [LICENSE](https://code.rosaelefanten.org/zb/file?name=LICENSE&ci=tip). Nobody reads those. I don't either.
 3. Find out if anyone has filed a GitHub Issue or even sent a Pull Request yet. Act accordingly.
 4. Send me a patch, either via e-mail (`git at tuxproject dot de`) or as a GitHub Pull Request. Note that GitHub only provides a mirror, so you'd double my work if you choose the latter. :-)
 
