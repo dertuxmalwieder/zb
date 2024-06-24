@@ -72,7 +72,7 @@ async fn dispatch(filepath: &str) -> HttpResponse {
                 if (&html_extensions).iter().any(|e| e == &extension) {
                     // This is a HTML file.
                     let mut contents = String::new();
-                    file.read_to_string(&mut contents);
+                    let _ = file.read_to_string(&mut contents);
 
                     // - .md: Pass to the Markdown parser.
                     // - .org: Pass to the org-mode parser.
@@ -93,7 +93,7 @@ async fn dispatch(filepath: &str) -> HttpResponse {
                     // a (supported) HTML file. Let's return a $ContentType
                     // file instead and pass it to the client statically.
                     let mut contents = Vec::new();
-                    file.read_to_end(&mut contents);
+                    let _ = file.read_to_end(&mut contents);
                     return HttpResponse::Ok()
                         .insert_header(header::ContentType(
                             mime_guess::from_ext(&extension).first_or_text_plain(),
